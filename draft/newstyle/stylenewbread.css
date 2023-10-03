@@ -1,0 +1,85 @@
+body {
+	background:#B8F1B0;
+	font-family: Verdana;
+	font-size: 14px;
+}
+#header {
+	background: #14C38E; text-align: center;
+	color: #ffffff;
+	font-size: 300%;
+	font-weight: bold;
+	padding: 30px;
+	border-radius: 10px;
+}
+.Eshterly{
+	width:350px;
+}
+#menu ul{
+	background: #14C38E;
+	font-size: 130%;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 10px; list-style-type: none;
+}
+#menu ul li{
+	display: inline;
+}
+#menu ul li a{
+	color: #ffffff;
+	text-decoration: none;
+	padding-left:30px;
+	padding-right:30px;
+	transition:0.5s;
+}
+#menu ul li a:hover {
+	background: white;
+	color: black;
+	border-radius: 30px;
+	font-size: 150%; 
+	transition:0.5s;
+}
+.image-1{
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:auto;
+	padding-right:2%;
+	width:50%;
+}
+#Category{
+	background: #14C38E;
+	color:white;
+	font-size: 130%;
+	text-align:center;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 10px; list-style-type: none;
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  width:40%;
+}
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #14C38E;
+}

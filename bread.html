@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bakery section</title>
+	<link rel="stylesheet" href="styles/stylefruit.css">
+</head>
+<body>
+	<div id= "header">Bakery section</div>
+	<div id= "menu">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="about.html">About US</a></li>
+		<li><a href="contactus.html">Contact Us</a></li>
+		<li><a href="login.html">Login</a></li>
+		<li><a href="signup.html">Signup</a></li>
+		
+		</ul>
+	</div>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="image/Cover 1.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/Cover 1 max.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/Cover 2.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/Cover 2 max.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/Cover 3.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="image/Cover 3 max.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>   
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	<div id= "Category">Category</div>
+<br>
+<section>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image/Toast - Made with PosterMyWall.jpg" alt="Toast" style="width:100%">
+      <h1>Toast</h1>
+  <h2 class="price">20 EGP</h2>
+  <a href="Toast.html"><p><button>Go to Freash</button></p></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="image/Delicious Bread Ads - Made with PosterMyWall (7).jpg" alt="" style="width:100%">
+      <h1>Cookies</h1>
+  <h2 class="price">15 EGP</h2>
+ <a href="cookies.html"><p><button>Go to Freash</button></p></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+     <img src="image/Delicious Bread Ads - Made with PosterMyWall (8).jpg" alt="" style="width:100%">
+      <h1>Croissant</h1>
+  <h2 class="price">10 EGP</h2>
+  <a href="croissan.html"><p><button>Go to Freash</button></p></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image/Delicious Bread Ads - Made with PosterMyWall (9).jpg" alt="Denim Jeans" style="width:100%">
+      <h1>Chococake</h1>
+  <h2 class="price">25 EGP</h2>
+  <a href="Chococake.html"><p><button>Go to Freash</button></p></a>
+    </div>
+  </div>
+</div>
+</section>
+<br>
+<section>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="image/Delicious Bread Ads - Made with PosterMyWall (11).jpg" alt="" style="width:100%">
+      <h1>Brawnies</h1>
+  <h2 class="price">20 EGP</h2>
+  <a href="Brawnies.html"><p><button>Go to Freash</button></p></a>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+     <img src="image/Delicious Bread Ads - Made with PosterMyWall (10).jpg" alt="" style="width:100%">
+      <h1>Cheese cake</h1>
+  <h2 class="price">30 EGP</h2>
+   <a href="Cheesecake.html"><p><button>Go to Freash</button></p></a>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="image/Delicious Bread Ads - Made with PosterMyWall (21).jpg" alt="Denim Jeans" style="width:100%">
+      <h1>Oriental bread</h1>
+  <h2 class="price">1 EGP</h2>
+  <a href="Obread.html"><p><button>Go to Freash</button></p></a>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<!--<section>
+	<div class="container_gallery">
+	<div class="gallery">
+            <a href="image/Toast - Made with PosterMyWall.jpg" data-title="Toast">
+                <img src="image/Toast - Made with PosterMyWall.jpg" alt="">
+            </a>
+            <a href="image/Delicious Bread Ads - Made with PosterMyWall (7).jpg" data-lightbox="categories" data-title="Cookies">
+                <img src="image/Delicious Bread Ads - Made with PosterMyWall (7).jpg" alt="">
+            </a>
+            </a>
+            <a href="image/Delicious Bread Ads - Made with PosterMyWall (8).jpg" data-lightbox="categories" data-title="croissant">
+            <img src="image/Delicious Bread Ads - Made with PosterMyWall (8).jpg" alt="">
+            </a>
+                </a>
+            <a href="image/Delicious Bread Ads - Made with PosterMyWall (9).jpg" data-lightbox="categories" data-title="Chococake">
+                <img src="image/Delicious Bread Ads - Made with PosterMyWall (9).jpg" alt="">
+            </a>
+            </a>
+            <a href="image/Delicious Bread Ads - Made with PosterMyWall (11).jpg" data-lightbox="categories" data-title="Brownies">
+                <img src="image/Delicious Bread Ads - Made with PosterMyWall (11).jpg" alt="">
+            </a>
+            </a>
+			<a href="image/Delicious Bread Ads - Made with PosterMyWall (10).jpg" data-lightbox="categories" data-title="Brownies">
+                <img src="image/Delicious Bread Ads - Made with PosterMyWall (10).jpg" alt="">
+            </a>
+            </a>
+           
+        </div> 
+       
+    </div>-->
+	<div id= "footer">&copy Eshtrely</div>
+
+	</body>
+</html>
